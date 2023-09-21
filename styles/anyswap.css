@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding-bottom: 250px;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --black: #1c1e21;
+  --white: #ffffff;
+  --tw-color1: #a855f7;
+  --tw-color1-hover: #9333ea;
+}
+
+body {
+  background: var(--black);
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  display: flex;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+`
+HTML,
+BODY {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+BODY {
+  display: block;
+  width: 100%;
+  background: #161b19;
+  color: #FFFFFF;
+  font-size: 12pt;
+}
+
+BUTTON.button,
+BUTTON.button:hover,
+BUTTON.button:active  {
+  border: 0px;
+  padding: 1rem;
+  width: 100%;
+  height: 2em;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid transparent;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  background: #17C6BA;
+  color: white;
+  width: auto;
+  font-size: 12pt;
+}
+BUTTON.button SVG {
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+}
+BUTTON.button:hover {
+  opacity: 0.92;
+}
+.tabsHolder {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.tabsHolder BUTTON,
+.tabsHolder BUTTON:hover {
+  border: 0px;
+  padding: 1rem;
+  width: 100%;
+  height: 2em;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 0px;
+  outline: none;
+  border: 1px solid transparent;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  background: #17C6BA;
+  color: white;
+  width: auto;
+  font-size: 12pt;
+  background: #5e5d5d;
+}
+
+.tabsHolder BUTTON:first-child {
+  border-top-left-radius: 5px;
+}
+.tabsHolder BUTTON:last-child {
+  border-top-right-radius: 5px;
+}
+
+.tabsHolder BUTTON:hover {
+  background: #7caba8;
+}
+.tabsHolder BUTTON.active,
+.tabsHolder BUTTON.active:hover {
+  background: #17C6BA;
+}
+
+.formHolder {
+  display: block;
+  border-radius: 5px;
+  padding: 1em;
+  border: 2px solid #17C6BA;
+}
+
+.header {
+  width: 100%;
+  background: #1e2423;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cardHolder {
+  max-width: 600px;
+  background: #1e2423;
+  border: 1px solid #5b5b5b;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.balanceInfo {
+  display: block;
+  text-align: right;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #9f9e9e;
+}
+
+.inputHolder {
+  display: flex;
+}
+.inputHolder INPUT {
+  width: 100%;
+  height: 2.5em;
+  border: 1px solid #646464;
+  background: #f2f2f2;
+  font-size: 12pt;
+  padding-left: 0.5em;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.inputHolder BUTTON {
+  border: 0px;
+  padding: 1rem;
+  width: 100%;
+  height: 2.5em !important;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 0px !important;
+  outline: none;
+  border: 1px solid transparent;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  background: #17C6BA;
+  color: white;
+  width: auto;
+  font-size: 12pt;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  text-wrap: nowrap;
+}
+.inputHolder BUTTON:hover {
+  opacity: 0.92;
+}
+.submitHolder {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
+
+.submitHolder BUTTON {
+  border: 0px;
+  padding: 1rem;
+  width: 100%;
+  height: 2em;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid transparent;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  background: #17C6BA;
+  color: white;
+  width: auto;
+  font-size: 12pt;
+}
+.submitHolder BUTTON:hover {
+  opacity: 0.92;
+}
+
+.submitHolder BUTTON:disabled {
+  background: gray;
+}
+
+H1 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+H2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.infoHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 1em;
+}
+.errorHolder {
+  display: block;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #fd7575;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
