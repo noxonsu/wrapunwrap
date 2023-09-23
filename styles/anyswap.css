@@ -152,12 +152,52 @@ BUTTON.button:hover {
 .header {
   width: 100%;
   background: #1e2423;
-  padding: 1em;
+  padding: 0 1em;
+  height: 70px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-
+.header .logoMenu {
+  display: flex;
+}
+.header .logoMenu .logo {
+  display: flex;
+  align-items: center;
+}
+.header .logoMenu .logo IMG {
+  max-height: 2em;
+}
+.header .logoMenu .menu {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3em;
+}
+.header .logoMenu .menu A {
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  font-weight: 500;
+  color: #cdd1dd;
+  box-sizing: border-box;
+  padding: 1.1rem 0.875rem;
+  line-height: 1rem;
+  white-space: nowrap;
+  font-size: 1.3rem;
+}
+.header .logoMenu .menu A:hover {
+  color: #979dac;
+}
+.header .logoMenu .menu A.active,
+.header .logoMenu .menu A.active:hover {
+  border-bottom: 2px solid #14a899;
+  color: #cdd1dd;
+}
 .cardHolder {
   max-width: 600px;
   background: #1e2423;

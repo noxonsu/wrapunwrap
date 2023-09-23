@@ -1,21 +1,37 @@
 window.WRAP_CONFIG = {
   native: {
-    name: 'ALV',
-    symbol: 'ALV',
+    name: 'XZO',
+    symbol: 'XZO',
     decimals: 18
   },
   network: {
-    slub: 'alv_mainnet',
-    chainName: 'AlveyChain',
-    chainId: '0xED5',
-    networkVersion: 3797,
-    rpcUrls: ['https://rpc2.alvey.io/rpc'],
-    blockExplorerUrls: ['https://alveyscan.com/'],
-    multicall: '0x48d7ac38530697aDB91061B6D141C8c763edE565',
+    slub: 'xzo_mainnet',
+    chainName: 'Exzo Network',
+    chainId: '0x4CD',
+    networkVersion: 1229,
+    rpcUrls: ['https://evm.exzo.network'],
+    blockExplorerUrls: ['https://evm.exzoscan.io/'],
+    multicall: '0x2250191beF1EC106CFbAdbE9f3E926B7066a94d7',
   },
-  wrapContract: `0xCb3e9919C56efF1004E54175a01e39163a352129`,
+  wrapContract: `0xb48344E930106cED3413BA69669CaD8b6DD4e1A5`,
+  logoLink: 'https://bridge.exzo.network/',
+  menuItems: [
+    {
+      title: 'Router',
+      href: 'https://bridge.exzo.network/#/v2/mergeswap'
+    },
+    {
+      title: 'Pool',
+      href: 'https://bridge.exzo.network/#/pool'
+    },
+    {
+      title: 'Wrap/Unwrap',
+      href: '#',
+      active: true
+    }
+  ],
   design: {
-    title: 'Wrap / UnWrap',
+    title: 'Wrap / UnWrap XZO',
     /*
     bodyBgColor: 'gray',
     bodyFgColor: 'red',

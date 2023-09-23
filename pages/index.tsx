@@ -13,6 +13,8 @@ import fetchTokensListInfo from "/helpers/fetchTokensListInfo"
 import { toWei, fromWei } from "/helpers/wei"
 import WrapTokenAbi from "/contracts/WrapTokenAbi.json"
 
+import { getAssets } from "/helpers/getAssets"
+
 const addNotify = (msg, style) => {
   console.log('>>> NOTIFY', style, msg)
 }
@@ -289,6 +291,20 @@ const Wrap: NextPage = (props) => {
         </style>
       )}
       <div className="header">
+        <div className="logoMenu">
+          <a href={WRAP_CONFIG?.logoLink} className="logo">
+            <img src={getAssets('logo.svg', 'logo')} />
+          </a>
+          {WRAP_CONFIG?.menuItems?.length > 0 && (
+            <div className="menu">
+              {WRAP_CONFIG.menuItems.map(({ title, href, active }, key) => {
+                return (
+                  <a key={key} href={(active) ? '' : href} className={(active) ? 'active' : ''}>{title}</a>
+                )
+              })}
+            </div>
+          )}
+        </div>
         {connectedAddress && !needChangeChain ? (
           <button className="button">
             <FaIcon icon="wallet" />
