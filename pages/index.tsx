@@ -197,10 +197,12 @@ const Wrap: NextPage = (props) => {
       method: (activeTab == TABS.WRAP) ? 'deposit' : 'withdraw',
       args: (activeTab == TABS.WRAP) ? [] : [ toWei(amount, wrappedInfo.decimals).toString() ],
       weiAmount: (activeTab == TABS.WRAP) ? toWei(amount, chain.nativeCurrency.decimals).toString() : false,
-    }).then((answer) => {
-      setNeedUpdate(true)
+      onSuccess: () => {
+        setNeedUpdate(true)
+        setIsSubmit(false)
+      }
+    }).then((answer) => { }).catch((err) => {
       setIsSubmit(false)
-    }).catch((err) => {
       console.log('>>> fail', err)
     })
   }
